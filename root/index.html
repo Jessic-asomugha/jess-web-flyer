@@ -160,20 +160,20 @@
       flex-wrap: wrap;
       gap: 0.5rem;
     }
-
+/* 
     .stat-num {
       font-family: 'Fraunces', serif;
       font-size: 1.7rem;
-      font-weight: 800;
+      font-weight: 500;
       background: #ffffffb3;
-      padding: 0.2rem 0.6rem;
-      border-radius: 40px;
+      padding: 0.1rem 0.4rem;
+      border-radius: 20px;
       color: #5f3c24;
       min-width: 85px;
       display: inline-block;
       text-align: center;
       letter-spacing: -0.3px;
-    }
+    } */
 
     .stat-desc {
       font-size: 0.85rem;
@@ -288,6 +288,29 @@
 
     .cta-btn:active {
       transform: translateY(1px);
+    }
+
+    .why-work {
+      padding: 2rem 2rem;
+      background: #fff9f1;
+      border-top: 1px solid #eee2d6;
+      border-bottom: 1px solid #eee2d6;
+      margin-bottom: 1.5rem;
+    }
+
+    .why-work h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #3b281c;
+      margin-bottom: 0.8rem;
+    }
+
+    .why-work p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: #4f3a2d;
+      max-width: 42rem;
     }
 
     /* contact area with buttons */
@@ -440,23 +463,23 @@
 <body>
   <div class="flyer">
     <div class="topbar">
-      <span>⚡ Professional Web Development</span>
-      <span>🔖 Limited spots — book your discovery call</span>
+      <p>Need a website? let's get you online</p>
     </div>
 
     <div class="hero">
-      <h1>Get Found Online <em>Before</em> Your Competitors Do.<br><em>Stand Out. Convert More.</em></h1>
-      <p class="tagline">I build modern, high-performing websites that help businesses grow online. Fast, responsive, and tailored to your brand.</p>
+      <h1>Get Found Online <em>Before</em> Your Competitors Do.<br><em>Build a strong, reliable online presence that helps your business stand out and attract customers..</em></h1>
+      <p class="tagline">I design and build clean, responsive websites tailored to your brand — from simple landing pages to full websites.</p>
     </div>
 
     <div class="split">
       <div class="split-left">
         <div class="section-label">✦ Services</div>
         <ul class="service-list">
-          <li>Business Websites & E‑commerce</li>
+          <li>Business Websites & online stores</li>
           <li>Portfolio & Personal Brand</li>
           <li>High-conversion Landing Pages</li>
           <li>Complete Redesigns</li>
+          <li>Web apps and integrations</li>
           <li>Ongoing Maintenance & Support</li>
         </ul>
       </div>
@@ -464,20 +487,20 @@
       <div class="split-right">
         <div class="section-label">✨ What You Can Expect</div>
         <div class="stat">
-          <span class="stat-num">~2 wks</span>
-          <span class="stat-desc">Fast turnaround — from concept to launch</span>
+          <span class="stat-num">⏳</span>
+          <span class="stat-desc">Fast turnaround — from concept to launch <br> (Landing pages: a few days • Full websites: ~2 weeks)</span>
         </div>
         <div class="stat">
-          <span class="stat-num">📱 100%</span>
+          <span class="stat-num">📱 </span>
           <span class="stat-desc">Fully responsive on all devices</span>
         </div>
         <div class="stat">
-          <span class="stat-num">∞</span>
-          <span class="stat-desc">Unlimited revisions until you're 100% satisfied</span>
+          <span class="stat-num"> ∞  </span>
+          <span class="stat-desc"> revisions until you're 100% satisfied</span>
         </div>
         <div class="stat">
-          <span class="stat-num">💬 1:1</span>
-          <span class="stat-desc">Smooth collaboration & direct communication</span>
+          <span class="stat-num">💬</span>
+          <span class="stat-desc">Smooth communication throughout the project</span>
         </div>
       </div>
     </div>
@@ -486,8 +509,8 @@
       <div class="section-label">📁 Latest Work</div>
       <div class="project-showcase">
         <div class="project-info">
-          <span class="project-name">"Your Treat" – dessert landing page</span>
-          <span class="project-desc">Modern, interactive brand presence + online ordering ready</span>
+          <span class="project-name">"Your Treat" </span>
+          <span class="project-desc">A modern website designed to showcase products and allow customers to browse and order easily.</span>
         </div>
         <a href="https://your-treat.vercel.app/index.html" target="_blank" rel="noopener noreferrer" class="portfolio-link">
           View Project →
@@ -496,12 +519,19 @@
       <p style="font-size: 0.75rem; margin-top: 0.8rem; color: #7f6858;">✨ More real-world projects available upon request</p>
     </div>
 
+    <div class="why-work">
+      <h2>Why work with me</h2>
+      <p>I focus on building websites that are clean, functional, and actually useful for your business — not just something that looks good.
+
+      Every project is handled directly, with attention to detail, clear communication, and a focus on delivering something you can confidently use and grow with.</p>
+    </div>
+
     <div class="cta">
       <div>
         <h2>Start Your Website</h2>
-        <p style="font-size: 0.8rem; margin-top: 0.3rem; color:#6e4f38;">Let's turn your vision into a powerful online presence</p>
+        <p style="font-size: 0.8rem; margin-top: 0.3rem; color:#6e4f38;">Let’s build a website that works for your business</p>
       </div>
-      <a href="#contact" class="cta-btn">Get Started →</a>
+      <p>If you’re ready to get your business online or improve your current website, feel free to reach out.</p>
     </div>
 
     <div id="contact" class="contact-section">
@@ -512,11 +542,10 @@
         <a href="https://instagram.com/buildwithjess_" target="_blank" rel="noopener noreferrer" class="contact-btn">📷 Instagram</a>
       
       </div>
-      <p style="font-size: 0.7rem; margin-top: 1.2rem; color:#aa8b72;">Response within 24h | Free 15-min strategy call</p>
+      <p style="font-size: 0.7rem; margin-top: 1.2rem; color:#aa8b72;">I usually respond within a few hours</p>
     </div>
 
     <div class="footer">
-      <span>© 2025 Build With Jess — code with purpose</span>
       <span>@buildwithjess_</span>
     </div>
   </div>
