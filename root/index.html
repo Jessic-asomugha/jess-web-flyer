@@ -458,16 +458,92 @@
       outline-offset: 3px;
       border-radius: 40px;
     }
+  /* pricing section */
+.pricing-section {
+  padding: 2rem;
+  background: #fffdf8;
+  border-top: 1px solid #eee2d6;
+  border-bottom: 1px solid #eee2d6;
+}
+
+.pricing-section h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.6rem;
+  color: #3b281c;
+  margin-bottom: 0.6rem;
+}
+
+.pricing-intro {
+  font-size: 0.9rem;
+  color: #6a5140;
+  margin-bottom: 1.5rem;
+  max-width: 38rem;
+  line-height: 1.6;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.pricing-card {
+  background: #fef5ed;
+  border: 1px solid #ead9c8;
+  border-radius: 1.3rem;
+  padding: 1.4rem;
+  transition: all 0.2s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  border-color: #c89a73;
+}
+
+.pricing-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  color: #2c1c12;
+  margin-bottom: 0.4rem;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #8b5a3a;
+  margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+  list-style: none;
+}
+
+.pricing-card ul li {
+  font-size: 0.85rem;
+  color: #4f3a2d;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed #e7d8ca;
+}
+
+.pricing-card ul li:last-child {
+  border-bottom: none;
+}
+
+.pricing-note {
+  font-size: 0.75rem;
+  color: #8a6b54;
+  margin-top: 1.2rem;
+}
   </style>
 </head>
 <body>
   <div class="flyer">
     <div class="topbar">
-      <p>Need a website? let's get you online</p>
+      <p>Need a website? let's get you online.</p>
     </div>
 
     <div class="hero">
-      <h1>Get Found Online <em>Before</em> Your Competitors Do.<br><em>Build a strong, reliable online presence that helps your business stand out and attract customers..</em></h1>
+      <h1>Get Found Online <em>Before</em> Your Competitors Do.<br><em>Build a strong, reliable online presence that helps your business stand out and attract customers.</em></h1>
       <p class="tagline">I design and build clean, responsive websites tailored to your brand — from simple landing pages to full websites.</p>
     </div>
 
@@ -505,19 +581,56 @@
       </div>
     </div>
 
-    <div class="portfolio">
-      <div class="section-label">📁 Latest Work</div>
-      <div class="project-showcase">
-        <div class="project-info">
-          <span class="project-name">"Your Treat" </span>
-          <span class="project-desc">A modern website designed to showcase products and allow customers to browse and order easily.</span>
-        </div>
-        <a href="https://your-treat.vercel.app/index.html" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-          View Project →
-        </a>
-      </div>
-      <p style="font-size: 0.75rem; margin-top: 0.8rem; color: #7f6858;">✨ More real-world projects available upon request</p>
+<div class="portfolio">
+  <div class="section-label">📁 Latest Work</div>
+
+  <!-- Project 1 -->
+  <div class="project-showcase">
+    <div class="project-info">
+      <span class="project-name">"Your Treat"</span>
+      <span class="project-desc">
+        Dessert Brand Experience: A full brand web experience for a dessert business, built to attract customers and drive orders.
+      </span>
+
+      <ul style="margin-top: 0.6rem; font-size: 0.75rem; color: #6b5546; padding-left: 1rem; line-height: 1.5;">
+        <li>Customers can browse the full menu and place orders with ease</li>
+        <li>Structured layout to make content easier to navigate and understand</li>
+        <li>Clean, appetising design that matches the brand's personality</li>
+        <li>Live and ready to take real customer traffic</li>
+      </ul>
     </div>
+
+    <a href="https://your-treat.vercel.app/index.html" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+      Live Site →
+    </a>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-showcase" style="margin-top: 1rem;">
+    <div class="project-info">
+      <span class="project-name">Libertas Supermarket Landing Page</span>
+      <span class="project-desc">
+        Helping a neighbourhood supermarket get found online and bring more customers through the door.
+      </span>
+
+      <ul style="margin-top: 0.6rem; font-size: 0.75rem; color: #6b5546; padding-left: 1rem; line-height: 1.5;">
+        <li>Improved online visibility for a local business</li>
+        <li>Customers can now find the store, its offerings, and contact info instantly</li>
+        <li>Mobile-friendly so it works perfectly for shoppers on the go</li>
+        <li>Helped the brand present itself more professionally online</li>
+      </ul>
+    </div>
+
+    <a href="https://libertassupermarket.vercel.app/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+      Live Site →
+    </a>
+  </div>
+
+  <!-- Trust Bridge -->
+  <p style="font-size: 0.8rem; margin-top: 1rem; color: #7f6858; line-height: 1.5;">
+    ✨ These are live projects I’ve designed, built, and deployed with a focus on usability and real-world impact. If you have a project in mind, I can help you build something that not only looks good but actually works for your business.
+  </p>
+</div>
 
     <div class="why-work">
       <h2>Why work with me</h2>
@@ -526,6 +639,56 @@
       Every project is handled directly, with attention to detail, clear communication, and a focus on delivering something you can confidently use and grow with.</p>
     </div>
 
+    <section class="pricing-section">
+  <h2>Pricing Options</h2>
+  <p class="pricing-intro">
+    Every project is different, so pricing depends on the scope and features required.
+    Here is a general guide to help you understand what to expect.
+  </p>
+
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <h3>Starter Website</h3>
+      <p class="price">From ₦50,000</p>
+      <ul>
+        <li>1–3 pages</li>
+        <li>Mobile responsive</li>
+        <li>Contact form</li>
+        <li>Clean modern layout</li>
+        <li>Basic SEO setup</li>
+      </ul>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Business Website</h3>
+      <p class="price">From ₦100,000</p>
+      <ul>
+        <li>4–8 pages</li>
+        <li>Custom sections</li>
+        <li>Booking/contact integration</li>
+        <li>Enhanced user experience</li>
+        <li>Brand-focused design</li>
+      </ul>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Custom Project</h3>
+      <p class="price">Custom Quote</p>
+      <ul>
+        <li>E-commerce</li>
+        <li>Advanced features</li>
+        <li>Automation</li>
+        <li>API integrations</li>
+        <li>Scalable solutions</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="pricing-note">
+    Final pricing is confirmed after discussing your project requirements.
+  </p>
+</section>
+    
     <div class="cta">
       <div>
         <h2>Start Your Website</h2>
@@ -540,7 +703,7 @@
         <a href="mailto:jessicaasomegha266@gmail.com" class="contact-btn">📧 Email</a>
         <a href="tel:+2347065270682" class="contact-btn">📞 Call / WhatsApp</a>
         <a href="https://instagram.com/buildwithjess_" target="_blank" rel="noopener noreferrer" class="contact-btn">📷 Instagram</a>
-      
+
       </div>
       <p style="font-size: 0.7rem; margin-top: 1.2rem; color:#aa8b72;">I usually respond within a few hours</p>
     </div>
